@@ -1,0 +1,777 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="Latika Dhiman — Computer Science Student & Full Stack Developer. Portfolio showcasing projects, skills, and certifications." />
+  <title>LDPortfolio | Latika Dhiman</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=DM+Sans:wght@300;400;500;600&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav id="navbar">
+    <a href="#home" class="nav-logo"><span class="logo-accent">LD</span>Portfolio</a>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="#home" class="nav-link active">Home</a></li>
+      <li><a href="#skills" class="nav-link">Skills</a></li>
+      <li><a href="#projects" class="nav-link">Projects</a></li>
+      <li><a href="#certificates" class="nav-link">Certificates</a></li>
+      <li><a href="#achievements" class="nav-link">Achievements</a></li>
+      <li><a href="#education" class="nav-link">Education</a></li>
+      <li><a href="#contact" class="nav-link nav-contact">Contact</a></li>
+    </ul>
+    <div class="nav-actions">
+      <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme">
+        <svg class="sun-icon" viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor"
+          stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="12" cy="12" r="5"></circle>
+          <line x1="12" y1="1" x2="12" y2="3"></line>
+          <line x1="12" y1="21" x2="12" y2="23"></line>
+          <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+          <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+          <line x1="1" y1="12" x2="3" y2="12"></line>
+          <line x1="21" y1="12" x2="23" y2="12"></line>
+          <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+          <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+        </svg>
+        <svg class="moon-icon" viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor"
+          stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+        </svg>
+      </button>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ===== HERO ===== -->
+  <section id="home" class="hero">
+    <div class="hero-inner">
+
+      <!-- LEFT: Text Content -->
+      <div class="hero-left">
+        <span class="hero-badge">✦ Open to Internships &amp; Opportunities</span>
+
+        <h1 class="hero-title"><em>Latika</em> Dhiman</h1>
+
+        <p class="hero-role">Full Stack Developer &nbsp;|&nbsp; Computer Science Student</p>
+
+        <p class="hero-tagline">
+          Problem Solver &nbsp;&bull;&nbsp; Curious Mind &nbsp;&bull;&nbsp; Builder of Real-World Solutions
+        </p>
+
+        <p class="hero-desc">
+          Computer Science student building clean, scalable web applications and AI-assisted tools. Focused on solving real-world problems through full-stack development and strong fundamentals in Data Structures and Algorithms.
+        </p>
+
+        <div class="hero-social-links">
+          <a href="https://github.com/Latika099" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+          <span class="social-sep">|</span>
+          <a href="https://www.linkedin.com/in/latika09/" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
+        </div>
+
+        <div class="hero-btns">
+          <a href="#projects" class="btn btn-primary">View Projects</a>
+          <a href="ca1cvresume.pdf" download="Latika_Dhiman_Resume.pdf" class="btn btn-outline" id="resume-download">Download Resume</a>
+          <a href="#contact" class="btn btn-ghost">Contact Me</a>
+        </div>
+
+        <div class="hero-tags">
+          <span>Web Development</span>
+          <span>Data Structures &amp; Algorithms</span>
+          <span>Always Learning &amp; Exploring</span>
+        </div>
+      </div>
+
+      <!-- RIGHT: Profile Card -->
+      <div class="hero-right">
+        <div class="profile-card">
+          <div class="profile-photo" id="hero-photo">
+            <img src="assets/profilepic.png" alt="Latika Dhiman">
+          </div>
+          <h3 class="profile-name">Latika Dhiman</h3>
+          <p class="profile-title">CS Student &nbsp;|&nbsp; Full Stack Developer</p>
+          <p class="profile-tagline">Passionate about building things that matter.</p>
+          <div class="profile-divider"></div>
+          <div class="profile-info">
+            <div class="profile-info-item">
+              <span class="pi-label">Primary Skills</span>
+              <div class="pi-tags">
+                <span>C++</span>
+                <span>Java</span>
+                <span>Web Dev</span>
+              </div>
+            </div>
+            <div class="profile-info-item">
+              <span class="pi-label">Location</span>
+              <span class="pi-value">Jalandhar, Punjab, India</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <div class="hero-decoration"></div>
+  </section>
+
+  <!-- ===== ABOUT ===== -->
+  <section id="about" class="section">
+    <div class="container">
+      <div class="card">
+        <div class="about-grid">
+
+          <!-- LEFT: Text -->
+          <div class="about-left">
+            <div class="section-header">
+              <p class="section-label">Who I Am</p>
+              <h2 class="section-title">About <em>Me</em></h2>
+            </div>
+            <div class="about-text">
+              <p>I am a Computer Science student passionate about building clean, user-focused digital products. I enjoy
+                transforming ideas into functional applications and continuously expanding my technical skills.</p>
+              <p>My journey into programming began with curiosity about how digital platforms work. Since then, I have
+                been actively exploring full-stack web development while strengthening my understanding of Data
+                Structures and Algorithms.</p>
+              <p>I regularly build personal projects, experiment with modern technologies, and focus on writing
+                efficient and maintainable code. My goal is to become a strong full-stack developer capable of building
+                scalable and impactful software solutions.</p>
+            </div>
+          </div>
+
+          <!-- RIGHT: Stats + Hobbies -->
+          <div class="about-right">
+
+            <div class="about-stats-grid">
+              <div class="about-stat-card">
+                <span class="asc-num">7+</span>
+                <span class="asc-label">Projects Built</span>
+              </div>
+              <div class="about-stat-card">
+                <span class="asc-num">100+</span>
+                <span class="asc-label">DSA Problems Solved</span>
+              </div>
+              <div class="about-stat-card">
+                <span class="asc-num">11</span>
+                <span class="asc-label">Technologies Learned</span>
+              </div>
+              <div class="asc-tech-tags">
+                <span>C++</span>
+                <span>Java</span>
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JavaScript</span>
+                <span>React</span>
+                <span>Node.js</span>
+                <span>Express</span>
+                <span>MySQL</span>
+                <span>Git</span>
+                <span>GitHub</span>
+              </div>
+            </div>
+
+            <div class="about-hobbies">
+              <p class="hobbies-heading">Beyond the Code</p>
+              <ul class="hobbies-list">
+                <li>Breaking down how real-world digital products are built and structured</li>
+                <li>Exploring new technologies and understanding how systems work under the hood</li>
+                <li>Thinking about better ways to design clean and intuitive user experiences</li>
+              </ul>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills" class="section">
+    <div class="container">
+      <div class="section-header centered">
+        <p class="section-label">What I Work With</p>
+        <h2 class="section-title">My <em>Skills</em></h2>
+      </div>
+
+      <div class="skills-wrapper">
+        <div class="skills-grid">
+          <!-- Column 1: Technical (Progress Bars) -->
+          <div class="skills-column">
+            <h3 style="font-family: 'Playfair Display', serif; font-size: 1.35rem; color: var(--accent); margin-bottom: 1.8rem;">Technical Proficiencies</h3>
+            
+            <div class="skill-item">
+              <div class="skill-info">
+                <span class="skill-name">C++</span>
+                <span class="skill-percentage">Advanced</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-progress" data-progress="80"></div>
+              </div>
+            </div>
+
+            <div class="skill-item">
+              <div class="skill-info">
+                <span class="skill-name">Java</span>
+                <span class="skill-percentage">Intermediate</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-progress" data-progress="75"></div>
+              </div>
+            </div>
+
+            <div class="skill-item">
+              <div class="skill-info">
+                <span class="skill-name">JavaScript</span>
+                <span class="skill-percentage">Advanced</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-progress" data-progress="80"></div>
+              </div>
+            </div>
+
+            <div class="skill-item">
+              <div class="skill-info">
+                <span class="skill-name">React</span>
+                <span class="skill-percentage">Intermediate</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-progress" data-progress="70"></div>
+              </div>
+            </div>
+
+            <div class="skill-item">
+              <div class="skill-info">
+                <span class="skill-name">Node.js</span>
+                <span class="skill-percentage">Intermediate</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-progress" data-progress="65"></div>
+              </div>
+            </div>
+
+            <div class="skill-item">
+              <div class="skill-info">
+                <span class="skill-name">MySQL</span>
+                <span class="skill-percentage">Intermediate</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-progress" data-progress="70"></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Column 2: Professional (Clean List) -->
+          <div class="skills-column">
+            <h3 style="font-family: 'Playfair Display', serif; font-size: 1.35rem; color: var(--accent); margin-bottom: 1.8rem;">Professional Strengths</h3>
+            
+            <div style="display: flex; flex-direction: column; gap: 2.15rem; padding-top: 0.2rem;">
+              <div style="font-weight: 500; font-size: 1.05rem; color: var(--text); border-bottom: 1px solid var(--accent-muted); padding-bottom: 0.8rem; display: flex; justify-content: space-between;">
+                <span>Problem Solving</span>
+                <span style="color: var(--accent); opacity: 0.6;">✓</span>
+              </div>
+              <div style="font-weight: 500; font-size: 1.05rem; color: var(--text); border-bottom: 1px solid var(--accent-muted); padding-bottom: 0.8rem; display: flex; justify-content: space-between;">
+                <span>Learning Agility</span>
+                <span style="color: var(--accent); opacity: 0.6;">✓</span>
+              </div>
+              <div style="font-weight: 500; font-size: 1.05rem; color: var(--text); border-bottom: 1px solid var(--accent-muted); padding-bottom: 0.8rem; display: flex; justify-content: space-between;">
+                <span>Communication</span>
+                <span style="color: var(--accent); opacity: 0.6;">✓</span>
+              </div>
+              <div style="font-weight: 500; font-size: 1.05rem; color: var(--text); border-bottom: 1px solid var(--accent-muted); padding-bottom: 0.8rem; display: flex; justify-content: space-between;">
+                <span>Collaboration</span>
+                <span style="color: var(--accent); opacity: 0.6;">✓</span>
+              </div>
+              <div style="font-weight: 500; font-size: 1.05rem; color: var(--text); border-bottom: 1px solid var(--accent-muted); padding-bottom: 0.8rem; display: flex; justify-content: space-between;">
+                <span>Analytical Thinking</span>
+                <span style="color: var(--accent); opacity: 0.6;">✓</span>
+              </div>
+              <div style="font-weight: 500; font-size: 1.05rem; color: var(--text); border-bottom: 1px solid var(--accent-muted); padding-bottom: 0.8rem; display: flex; justify-content: space-between;">
+                <span>Adaptability</span>
+                <span style="color: var(--accent); opacity: 0.6;">✓</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== GITHUB ACTIVITY ===== -->
+  <section id="github" class="section" style="padding-top: 0;">
+    <div class="container">
+      <div class="card" style="padding: 2.5rem;">
+        <h3 style="font-family: 'Playfair Display', serif; font-size: 1.5rem; margin-bottom: 1.5rem; color: var(--accent);">GitHub Activity</h3>
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem;">
+          <div style="background: var(--bg); padding: 1.5rem; border-radius: 8px; border: 1px solid var(--border);">
+            <p style="font-weight: 600; color: var(--text); margin-bottom: 0.25rem;">200+ Commits</p>
+            <p style="font-size: 0.875rem; color: var(--text-secondary);">Across personal and academic projects</p>
+          </div>
+          <div style="background: var(--bg); padding: 1.5rem; border-radius: 8px; border: 1px solid var(--border);">
+            <p style="font-weight: 600; color: var(--text); margin-bottom: 0.25rem;">Full-Stack Solutions</p>
+            <p style="font-size: 0.875rem; color: var(--text-secondary);">Multiple applications deployed and maintained</p>
+          </div>
+          <div style="background: var(--bg); padding: 1.5rem; border-radius: 8px; border: 1px solid var(--border);">
+            <p style="font-weight: 600; color: var(--text); margin-bottom: 0.25rem;">Active Repository</p>
+            <p style="font-size: 0.875rem; color: var(--text-secondary);">Showcasing regular development and learning work</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PROJECTS ===== -->
+  <section id="projects" class="section">
+    <div class="container">
+      <div class="section-header centered">
+        <p class="section-label">What I've Built</p>
+        <h2 class="section-title">Featured <em>Projects</em></h2>
+      </div>
+      <div class="projects-grid projects-carousel">
+
+        <div class="project-card fade-hidden">
+          <div class="project-img-wrapper">
+            <img src="assets/aimail.png" alt="AI Email Composer" class="project-img">
+          </div>
+          <div class="project-card-content">
+            <div class="project-tag">Full Stack</div>
+            <h3>AI Email Composer</h3>
+            <p>AI-powered tool that generates structured and professional emails based on user intent, tone, and message length using the Groq API.</p>
+            <div class="project-tech">
+              <span>React</span><span>Node.js</span><span>Express</span><span>MongoDB</span><span>Groq API</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/Latika099/AI-Email-Composer-FullStack" class="project-link" target="_blank" rel="noopener noreferrer">Source Code ↗</a>
+              <a href="https://ai-email-composer-full-stack.vercel.app/" class="project-link" target="_blank" rel="noopener noreferrer">Live Demo ↗</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card fade-hidden">
+          <div class="project-img-wrapper">
+            <img src="assets/exam.png" alt="Exam Paper Generator" class="project-img">
+          </div>
+          <div class="project-card-content">
+            <div class="project-tag">Full Stack</div>
+            <h3>Exam Paper Generator</h3>
+            <p>Web-based examination system where instructors generate question papers and manage assessments through role-based workflows.</p>
+            <div class="project-tech">
+              <span>React</span><span>Node.js</span><span>Express</span><span>MySQL</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/shivangishrey0/ExamPaper-Generator" class="project-link" target="_blank" rel="noopener noreferrer">Source Code ↗</a>
+              <a href="#" class="project-link">Live Demo ↗</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card fade-hidden">
+          <div class="project-img-wrapper">
+            <img src="assets/winguard.png" alt="WinGuard Pro" class="project-img">
+          </div>
+          <div class="project-card-content">
+            <div class="project-tag">System Utility</div>
+            <h3>WinGuard Pro – System Security Toolkit</h3>
+            <p>Windows security and optimization toolkit built using batch scripting to analyze system vulnerabilities, manage privacy settings, automate cleanup tasks, and generate security reports.</p>
+            <div class="project-tech">
+              <span>Batch Script</span><span>Windows CLI</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/Latika099/WinGuardPro" class="project-link" target="_blank" rel="noopener noreferrer">Source Code ↗</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card fade-hidden">
+          <div class="project-img-wrapper">
+            <img src="assets/bidhub.png" alt="BidHub" class="project-img">
+          </div>
+          <div class="project-card-content">
+            <div class="project-tag">Full Stack</div>
+            <h3>BidHub – Online Auction Platform</h3>
+            <p>Full-stack web application enabling users to create auctions, place bids in real time, and manage listings through a secure dashboard.</p>
+            <div class="project-tech">
+              <span>PHP</span><span>MySQL</span><span>JavaScript</span><span>HTML</span><span>CSS</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/Latika099/Bidhub" class="project-link" target="_blank" rel="noopener noreferrer">Source Code ↗</a>
+              <a href="#" class="project-link">Live Demo ↗</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <!-- ===== CERTIFICATES ===== -->
+  <section id="certificates" class="section">
+    <div class="container">
+      <div class="section-header centered">
+        <p class="section-label">Learning &amp; Certifications</p>
+        <h2 class="section-title">My <em>Certificates</em></h2>
+      </div>
+
+      <div class="cert-slider-wrap">
+        <!-- Left Arrow -->
+        <button class="cert-arrow cert-arrow-left" id="cert-prev" aria-label="Scroll left">&#8592;</button>
+
+        <!-- Scrollable Row -->
+        <div class="cert-slider" id="cert-slider">
+
+          <div class="cert-card">
+            <div class="certificate-image">
+              <img src="oracle.png" alt="Oracle Certified Foundations Associate">
+            </div>
+            <div class="cert-body">
+              <h3>Oracle Certified Foundations Associate</h3>
+              <p class="cert-platform">Oracle University</p>
+              <span class="cert-year">2025</span>
+              <a href="oracle.png" target="_blank" class="cert-link">View Certificate →</a>
+            </div>
+          </div>
+
+          <div class="cert-card">
+            <div class="certificate-image">
+              <img src="udemy_gen_ai.png" alt="Udemy Generative AI Certificate">
+            </div>
+            <div class="cert-body">
+              <h3>Master Generative AI & Generative AI tools (ChatGPT & more)</h3>
+              <p class="cert-platform">UDEMY</p>
+              <span class="cert-year">2025</span>
+              <a href="udemy_gen_ai.png" target="_blank" class="cert-link">View Certificate →</a>
+            </div>
+          </div>
+
+          <div class="cert-card">
+            <div class="certificate-image">
+              <img src="infosys_automata.png" alt="Infosys Automata Certificate">
+            </div>
+            <div class="cert-body">
+              <h3>Computational Theory: Language Principle & Finite Automata Theory</h3>
+              <p class="cert-platform">INFOSYS SPRINGBOARD</p>
+              <span class="cert-year">2025</span>
+              <a href="infosys_automata.png" target="_blank" class="cert-link">View Certificate →</a>
+            </div>
+          </div>
+
+          <div class="cert-card">
+            <div class="certificate-image">
+              <img src="deloitte.png" alt="Deloitte Technology Job Simulation Certificate">
+            </div>
+            <div class="cert-body">
+              <h3>Technology Job Simulation</h3>
+              <p class="cert-platform">DELOITTE</p>
+              <span class="cert-year">2025</span>
+              <a href="deloitte.png" target="_blank" class="cert-link">View Certificate →</a>
+            </div>
+          </div>
+
+          <div class="cert-card">
+            <div class="certificate-image">
+              <img src="neojava.png" alt="Neo Java Programming Certificate">
+            </div>
+            <div class="cert-body">
+              <h3>Java Programming</h3>
+              <p class="cert-platform">COURSERA</p>
+              <span class="cert-year">2024</span>
+              <a href="neojava.png" target="_blank" class="cert-link">View Certificate →</a>
+            </div>
+          </div>
+
+          <div class="cert-card">
+            <div class="certificate-image">
+              <img src="udemygit.png" alt="Git Going Fast: One Hour Git Crash Course Certificate">
+            </div>
+            <div class="cert-body">
+              <h3>Git Going Fast: One Hour Git Crash Course</h3>
+              <p class="cert-platform">UDEMY</p>
+              <span class="cert-year">2023</span>
+              <a href="udemygit.png" target="_blank" class="cert-link">View Certificate →</a>
+            </div>
+          </div>
+
+          <div class="cert-card">
+            <div class="certificate-image">
+              <img src="freecode.png" alt="freeCodeCamp Certificate">
+            </div>
+            <div class="cert-body">
+              <h3>Legacy Responsive Web Design</h3>
+              <p class="cert-platform">freeCodeCamp</p>
+              <span class="cert-year">2023</span>
+              <a href="freecode.png" target="_blank" class="cert-link">View Certificate →</a>
+            </div>
+          </div>
+
+          <div class="cert-card">
+            <div class="certificate-image">
+              <img src="nptel.png" alt="NPTEL Cloud Computing Certificate">
+            </div>
+            <div class="cert-body">
+              <h3>Cloud Computing</h3>
+              <p class="cert-platform">NPTEL / IIT Kharagpur</p>
+              <span class="cert-year">2025</span>
+              <a href="nptel.png" target="_blank" class="cert-link">View Certificate →</a>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Right Arrow -->
+        <button class="cert-arrow cert-arrow-right" id="cert-next" aria-label="Scroll right">&#8594;</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== ACHIEVEMENTS ===== -->
+  <section id="achievements" class="section">
+    <div class="container">
+      <div class="section-header centered">
+        <p class="section-label">Milestones & Recognition</p>
+        <h2 class="section-title">My <em>Achievements</em></h2>
+      </div>
+      <div class="achievement-timeline">
+        <!-- Milestone 1 -->
+        <div class="milestone-item">
+          <div class="milestone-year">2025</div>
+          <div class="milestone-dot"></div>
+          <div class="milestone-content">
+            <span class="milestone-category">Certification</span>
+            <h3>NPTEL Elite Certification – Cloud Computing</h3>
+            <p>Awarded Elite certification from IIT Kharagpur for successfully completing the 12-week Cloud Computing course.</p>
+          </div>
+        </div>
+
+        <!-- Milestone 2 -->
+        <div class="milestone-item">
+          <div class="milestone-year">2025</div>
+          <div class="milestone-dot"></div>
+          <div class="milestone-content">
+            <span class="milestone-category">Cloud</span>
+            <h3>Oracle Cloud Certification</h3>
+            <p>Earned Oracle Cloud certification demonstrating knowledge of cloud infrastructure and services.</p>
+          </div>
+        </div>
+
+        <!-- Milestone 3 -->
+        <div class="milestone-item">
+          <div class="milestone-year">2025</div>
+          <div class="milestone-dot"></div>
+          <div class="milestone-content">
+            <span class="milestone-category">Projects & AI</span>
+            <h3>Deployed AI-Powered Applications</h3>
+            <p>Designed and deployed intelligent applications including an AI Mail Composer and an Automated AI Exam Paper Generator.</p>
+          </div>
+        </div>
+
+        <!-- Milestone 4 -->
+        <div class="milestone-item">
+          <div class="milestone-year">2024</div>
+          <div class="milestone-dot"></div>
+          <div class="milestone-content">
+            <span class="milestone-category">Algorithm</span>
+            <h3>Programming & Algorithmic Problem Solving</h3>
+            <p>Strengthened analytical thinking through consistent practice of data structures and algorithmic problem solving.</p>
+          </div>
+        </div>
+
+        <!-- Milestone 5 -->
+        <div class="milestone-item">
+          <div class="milestone-year">2023 – Present</div>
+          <div class="milestone-dot"></div>
+          <div class="milestone-content">
+            <span class="milestone-category">Academic</span>
+            <h3>Strong CS Fundamentals</h3>
+            <p>Achieved strong academic performance in core computer science subjects including C++, Operating Systems, and Database Management Systems.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== EDUCATION ===== -->
+  <section id="education" class="section">
+    <div class="container">
+      <div class="section-header centered">
+        <p class="section-label">EDUCATION</p>
+        <h2 class="section-title">Educational <em>Journey</em></h2>
+      </div>
+
+      <div class="edu-wrapper">
+        <!-- Left: Timeline Column -->
+        <div class="edu-timeline">
+          <!-- Card 1: College -->
+          <div class="edu-item">
+            <div class="edu-dot"></div>
+            <div class="edu-card">
+              <div class="edu-header">
+                <span class="edu-date">Aug 2023 – Present</span>
+                <div class="edu-badges">
+                  <span class="badge badge-highlight">Present</span>
+                  <span class="badge">B.Tech (CSE)</span>
+                  <span class="badge badge-score">CGPA: 8.0</span>
+                </div>
+              </div>
+              <h3>Lovely Professional University</h3>
+              <p class="edu-location">Jalandhar, Punjab</p>
+              <div class="edu-details">
+                <p>Pursuing Bachelor of Technology in Computer Science & Engineering.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 2: Class XII -->
+          <div class="edu-item">
+            <div class="edu-dot"></div>
+            <div class="edu-card">
+              <div class="edu-header">
+                <span class="edu-date">Apr 2021 – Mar 2023</span>
+                <div class="edu-badges">
+                  <span class="badge">Intermediate</span>
+                  <span class="badge">PCM</span>
+                  <span class="badge badge-score">CGPA: 9.0</span>
+                </div>
+              </div>
+              <h3>Jawahar Navodaya Vidyalaya</h3>
+              <p class="edu-location">Ambala, Haryana</p>
+              <div class="edu-details">
+                <p>Completed Higher Secondary Education with a focus on Physics, Chemistry, and Mathematics.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 3: Class X -->
+          <div class="edu-item">
+            <div class="edu-dot"></div>
+            <div class="edu-card">
+              <div class="edu-header">
+                <span class="edu-date">Apr 2019 – Mar 2021</span>
+                <div class="edu-badges">
+                  <span class="badge">Matriculation</span>
+                  <span class="badge badge-score">CGPA: 8.3</span>
+                </div>
+              </div>
+              <h3>Jawahar Navodaya Vidyalaya</h3>
+              <p class="edu-location">Ambala, Haryana</p>
+              <div class="edu-details">
+                <p>Completed Matriculation with a strong academic foundation in Science and Mathematics.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: Highlights Sidebar -->
+        <div class="edu-highlights">
+          <h4>Academic Highlights</h4>
+          <ul class="highlight-list">
+            <li class="highlight-item">
+              <div class="hi-text">
+                <h5>Programming Foundations</h5>
+                <p>Strong understanding of programming concepts including OOP and data structures.</p>
+              </div>
+            </li>
+            <li class="highlight-item">
+              <div class="hi-text">
+                <h5>Web Development</h5>
+                <p>Experience building responsive web applications using HTML, CSS, JavaScript, PHP, and MySQL.</p>
+              </div>
+            </li>
+            <li class="highlight-item">
+              <div class="hi-text">
+                <h5>Project Development</h5>
+                <p>Developed projects such as an Online Auction Platform and an Automated Exam Paper Generator.</p>
+              </div>
+            </li>
+            <li class="highlight-item">
+              <div class="hi-text">
+                <h5>Continuous Learning</h5>
+                <p>Completed technical certifications and actively improving development skills.</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT ===== -->
+  <section id="contact" class="section">
+    <div class="container">
+      <div class="card">
+        <div class="section-header">
+          <p class="section-label">Let's Connect</p>
+          <h2 class="section-title">Get In <em>Touch</em></h2>
+        </div>
+        <div class="contact-grid">
+          <div class="contact-info">
+            <p>I am open to new opportunities, collaborations, and conversations. Feel free to reach out — I would love
+              to hear from you!</p>
+            <div class="contact-details">
+              <div class="contact-detail-item">
+                <div style="display: flex; flex-direction: column; gap: 0.2rem;">
+                  <span style="font-size: 0.75rem; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; color: var(--accent);">Email</span>
+                  <a href="mailto:latikadhiman099@gmail.com" style="font-size: 0.95rem; color: var(--text-secondary);">latikadhiman099@gmail.com</a>
+                </div>
+              </div>
+              <div class="contact-detail-item">
+                <div style="display: flex; flex-direction: column; gap: 0.2rem;">
+                  <span style="font-size: 0.75rem; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; color: var(--accent);">Location</span>
+                  <span style="font-size: 0.95rem; color: var(--text-secondary);">Jalandhar, Punjab, India</span>
+                </div>
+              </div>
+              <div class="contact-detail-item">
+                <div style="display: flex; flex-direction: column; gap: 0.2rem;">
+                  <span style="font-size: 0.75rem; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; color: var(--accent);">Availability</span>
+                  <span style="font-size: 0.95rem; color: var(--text-secondary);">Open to Internships & Opportunities</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <form id="contact-form" class="contact-form">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" placeholder="Your name" required />
+              </div>
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="your@email.com" required />
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="subject">Subject</label>
+              <input type="text" id="subject" placeholder="What's this about?" />
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" rows="5" placeholder="Your message…" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary" id="send-btn">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer id="footer">
+    <div class="footer-inner">
+      <p class="footer-logo"><span class="logo-accent">LD</span>Portfolio</p>
+      <p class="footer-copy">Designed &amp; Built by Latika Dhiman &nbsp;·&nbsp; © 2025</p>
+      <div class="footer-socials">
+        <a href="https://github.com/Latika099" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a href="https://www.linkedin.com/in/latika09/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
