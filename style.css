@@ -17,9 +17,11 @@
   --text-muted: #999999;
   --border: #E0E0E0;
   --shadow-sm: 0 4px 12px rgba(0, 0, 0, 0.05);
-  --shadow-md: 0 10px 30px rgba(0, 0, 0, 0.08); /* New shadow requested */
+  --shadow-md: 0 10px 30px rgba(0, 0, 0, 0.08);
+  /* New shadow requested */
   --shadow-lg: 0 20px 50px rgba(0, 0, 0, 0.1);
-  --radius-sm: 4px; /* More editorial (sharper corners) */
+  --radius-sm: 4px;
+  /* More editorial (sharper corners) */
   --radius-md: 8px;
   --radius-lg: 12px;
   --nav-h: 72px;
@@ -781,11 +783,12 @@ body.dark-mode .profile-photo {
 }
 
 .edu-card {
-  background: #F8F8F8; /* Light gray background requested */
+  background: #F8F8F8;
+  /* Light gray background requested */
   border: 1px solid var(--border);
   border-radius: 12px;
   padding: 1.5rem 1.8rem;
-  box-shadow: 0 4px 20px rgba(0,0,0,0.03);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.03);
   transition: all 0.4s ease;
 }
 
@@ -793,7 +796,7 @@ body.dark-mode .profile-photo {
   transform: translateY(-4px);
   background: #FFFFFF;
   border-color: var(--accent-border);
-  box-shadow: 0 10px 30px rgba(0,0,0,0.06);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
 }
 
 .edu-header {
@@ -832,7 +835,7 @@ body.dark-mode .profile-photo {
 }
 
 .badge-score {
-  background: rgba(0,0,0,0.08);
+  background: rgba(0, 0, 0, 0.08);
   color: #111111;
 }
 
@@ -888,7 +891,9 @@ body.dark-mode .profile-photo {
   gap: 1rem;
 }
 
-.hi-icon { font-size: 1.4rem; }
+.hi-icon {
+  font-size: 1.4rem;
+}
 
 .hi-text h5 {
   font-size: 0.95rem;
@@ -902,13 +907,21 @@ body.dark-mode .profile-photo {
 }
 
 @media (max-width: 900px) {
-  .edu-wrapper { grid-template-columns: 1fr; }
+  .edu-wrapper {
+    grid-template-columns: 1fr;
+  }
 }
 
 @media (max-width: 600px) {
-  .edu-timeline { padding-left: 2rem; }
-  .edu-dot { left: -1.82rem; }
+  .edu-timeline {
+    padding-left: 2rem;
+  }
+
+  .edu-dot {
+    left: -1.82rem;
+  }
 }
+
 .asc-icon {
   font-size: 1.6rem;
   flex-shrink: 0;
@@ -1058,18 +1071,21 @@ body.dark-mode .profile-photo {
   background: var(--bg-card);
   border: 1px solid var(--border);
   border-radius: var(--radius-md);
-  padding: 0; /* Remove padding to let image fill top */
+  padding: 0;
+  /* Remove padding to let image fill top */
   display: flex;
   flex-direction: column;
   box-shadow: var(--shadow-sm);
   transition: all var(--transition);
   position: relative;
-  overflow: hidden; /* Clip image zoom */
+  overflow: hidden;
+  /* Clip image zoom */
 }
 
 .project-img-wrapper {
   width: 100%;
-  height: 155px; /* Compact height */
+  height: 155px;
+  /* Compact height */
   overflow: hidden;
   border-bottom: 1px solid var(--border);
 }
@@ -1103,10 +1119,12 @@ body.dark-mode .profile-photo {
 }
 
 .project-card-content {
-  padding: 1.35rem 1.5rem; /* Reduced padding */
+  padding: 1.35rem 1.5rem;
+  /* Reduced padding */
   display: flex;
   flex-direction: column;
-  gap: 0.85rem; /* Vertical spacing adjustment */
+  gap: 0.85rem;
+  /* Vertical spacing adjustment */
   flex-grow: 1;
 }
 
@@ -1117,7 +1135,8 @@ body.dark-mode .profile-photo {
 }
 
 .project-card:hover .project-img {
-  transform: scale(1.08); /* Zoom effect */
+  transform: scale(1.08);
+  /* Zoom effect */
 }
 
 /* Horizontal Carousel */
@@ -1264,7 +1283,8 @@ body.dark-mode .profile-photo {
 
 /* Certificate image preview wrapper */
 .certificate-image {
-  height: 150px; /* Cropped height */
+  height: 150px;
+  /* Cropped height */
   width: 100%;
   overflow: hidden;
   border-bottom: 1px solid var(--border);
@@ -1277,12 +1297,14 @@ body.dark-mode .profile-photo {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: top; /* Crop to top portions */
+  object-position: top;
+  /* Crop to top portions */
   transition: transform 0.5s ease;
 }
 
 .cert-card:hover .certificate-image img {
-  transform: scale(1.05); /* Subtle attraction zoom */
+  transform: scale(1.05);
+  /* Subtle attraction zoom */
 }
 
 /* Card body content */
@@ -1778,12 +1800,13 @@ body.dark-mode .profile-photo {
   .achievement-timeline::before {
     left: 16px;
   }
-  
+
   .milestone-item {
-    flex-direction: column; /* Stack year above content on small screens */
+    flex-direction: column;
+    /* Stack year above content on small screens */
     padding-left: 3rem;
   }
-  
+
   .milestone-year {
     width: auto;
     text-align: left;
@@ -1791,12 +1814,12 @@ body.dark-mode .profile-photo {
     margin-bottom: 0.4rem;
     font-size: 0.8rem;
   }
-  
+
   .milestone-dot {
     left: 16px;
     top: 6px;
   }
-  
+
   .milestone-content {
     padding-left: 0;
   }
